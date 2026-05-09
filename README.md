@@ -102,7 +102,11 @@ The `3d-models/` folder contains SolidWorks parts and assemblies used for the me
 
 ## Images
 
+Tracked Robotic Platform:
+
 ![Tracked robotic platform](images/platform-photo.png)
+
+Control Architecture:
 
 ![Control architecture](images/control-architecture.png)
 
@@ -114,4 +118,4 @@ This project demonstrates practical experience with robotics, embedded control, 
 
 Full project files, photos, diagrams, and documentation are available here:
 
-[Open project folder](ADD_YOUR_GOOGLE_DRIVE_LINK_HERE)
+[Open project folder](https://drive.google.com/drive/folders/1vI2_EpGcXlrNyNIjIMkyfcUdXzsrzmkb?usp=sharing)
