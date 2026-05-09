@@ -1,0 +1,114 @@
+html {
+	height: 100vh;
+}
+
+body {
+	display: flex;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	font-family: 'Oswald';
+
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+p {
+	margin: 0;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	padding: 0.5rem;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: normal;
+	font-size: 1rem;
+	color: #fff;
+
+	background-color: #000;
+}
+
+.left-bar {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.right-bar {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.brand, .branch {
+	align-items: center;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.branch {
+	color: #050;
+}
+
+.control1 {
+	position: fixed;
+	left: 0;
+	top: 50%;
+}
+
+.control2 {
+	position: fixed;
+	right: 0;
+	top: 50%;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	margin: 1rem;
+	padding: 1rem;
+	border: solid 2px #000;
+	background-color: transparent;
+	border-radius: 10px;
+	transition: all 0.2s ease;
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+	cursor: pointer;
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn.active {
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
+	background-color: rgba(100, 100, 100, 1);
+}
+
+@media screen and (max-width: 576px) {
+	
+	.control {
+		width: 100%;
+		top: unset;
+		bottom: 0;
+	}
+}

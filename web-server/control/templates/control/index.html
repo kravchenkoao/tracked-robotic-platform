@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Control</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<script src="{% static 'js/joy.js' %}"></script>	
+</head>
+<body>
+	<header class="header w-100 d-flex justify-between align-items-middle">
+		<div class="left-bar d-flex justify-start align-items-middle">
+			<p class="cam-positions">Cam positions: <span>X</span> <span>Y</span></p>
+		</div>
+		<div class="right-bar d-flex justify-end align-items-middle">
+			<p class="longitude">Longitude</p>
+			<p class="speed">Speed</p>
+			<img src="{% static 'img/battery.png' %}" alt="" srcset="" class="battery-level" height="24px">
+		</div>
+		<!-- <div class="brand">
+			<img height="64px" src="{% static 'img/logo.png' %}" class="brand-img">
+			<div class="brang-name">HighTech</div>
+		</div>
+		<div class="branch">
+			<div class="branch-name">Military</div>
+			<img height="50px" src="{% static 'img/military.png' %}" alt="" class="branch-img">
+		</div> -->
+	</header>
+	<div class="control1" id="joy1Div" style="width: 200px; height: 200px;"></div>
+	<div class="control2" id="joy2Div" style="width: 200px; height: 200px;"></div>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
